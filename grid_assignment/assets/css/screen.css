@@ -22,7 +22,7 @@ background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.p
 
 .container{
   max-width:960px;
-  background-image:url("../img/grid.png");
+  background-image:url("../resources/grid.png");
   margin:20px auto;
   border: 1px solid #000;
   overflow: auto;
