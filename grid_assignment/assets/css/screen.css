@@ -16,41 +16,74 @@ html {
         .cf:after { clear: both; }
 
    /* End of "Micro clearfix" */
+ 
+/*
+background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
 
-   .container {
-  max-width:950px;
-  background-image:url("../../assets/resources/grid.png");
+.container{
+  max-width:960px;
+  background-image:url("../img/grid.png");
   margin:20px auto;
-  border:1px solid black
+  border: 1px solid #000;
+  overflow: auto;
 }
 
-header.primary, footer#colophon{
-  /*width:930px;*/
-  width:930px;
+header.primary{
+  /* 940px */
+  grid-area: header;
+  width:97.916667%;
   float:left;
-  /*margin:10px;*/
-  margin-left:0px;
-  /*padding: 15px*/
-  padding: 15px;
+  margin-left:2.12766%;
+  padding: 1.041557%;
 }
+
 
 #content{
-  /*width:489px;*/
-  width:489px;
+  /* 540px */
+  grid-area: content;
+  width:56.25%;
   float:left;
-  margin-left:10px;
-  /*padding:15px;*/
-  padding:15px;
-  
+margin-left:2.12766%;
+padding: 1.041557%;
 }
 
 aside{
-  /*width:300px;*/
-  width:300px;
+/* 360px */
+  width:37.5%;
   float:left;
-  margin-left:65px;
-  /*padding:15px;*/
-  padding:15px;
+  margin-left:2.12766%;
+  padding: 1.041557%;
+}
+
+#colophon{
+  /* 940px */
+  width:97.916667%;
+  float:left;
+  margin-left: 2.12766%;
+  padding: 1.041557%;
+}
+.cf {
+  overflow: scroll;
 }
 
 
+/*
+.col-4{
+  width:370px;
+  float:left;
+  margin-left:20px;
+ 
+}
+
+.col-6{
+  width:356px;
+  float:left;
+  margin-left:20px;
+}
+
+.col-12{
+  width:920px;
+  float:left;
+  margin-left:20px;
+}
+*/
