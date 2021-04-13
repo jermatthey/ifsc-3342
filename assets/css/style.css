@@ -92,11 +92,11 @@ header {
     text-align: center;
     text-shadow:2px 2px 2px white;
     width: 100%;
-}
-
-.assignments {
-    text-align: center;
     
+}
+li {
+  display: flex;
+  justify-content: center;
 }
 /* ==========================================================================
    Helper classes
