@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+ </head>
+ <body>
+    <video
+    id="my-video"
+    class="video-js vjs-big-play-centered"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="assets/hudson-shelter-falls.mp4" type="video/mp4" />
+    <source src="assets/hudston-shelter-falls.webm" type="video/webm" />
+    <source src="assets/hudston-shelter-falls.ogv" type="video/ogv" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>Videojs was used for the above video <a href="https://videojs.com/getting-started">Source code available here</a>
+This video works on every modern browser, including mobile.
+<audio controls="controls">
+<source src="assets/thunder.ogg" type="audio/ogg" /><!-- Firefox, Opera, Chrome -->
+<source src="assets/thunder.mp3" type="audio/mp3" /><!-- Safari, Chrome, IE9+ -->
+<source src="assets/thunder.wav" type="audio/wav" /><!-- Safari, Opera, IE9+, Firefox -->
+<a href="thunder.mp3">Download the Audio</a>
+All except ogg is supported the above player is supported by most modern browsers (IE being the exception)
+</audio>
+All except ogg is supported the above player is supported by most modern browsers (IE being the exception)
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script src="//path/to/video.min.js"></script>
+<script src="//path/to/videojs-shuttle-controls.min.js"></script>
+<script>
+  var player = videojs('my-video', {
+    playbackRates: [-10, -5, -2, -1, -0.5, 0.5, 1, 2, 5, 10]
+  });
+ 
+  player.shuttleControls({
+    playPauseKeys       : [' ', 'k'],
+    backwardKeys        : ['j'],
+    forwardKey          : ['l'],
+    inKey               : ['i'],
+    outKey              : ['o'],
+    backwardFrameKey    : ['ArrowLeft'],
+    forwardFrameKey     : ['ArrowRight'],
+    shiftMagnification  : 10,
+    fps                 : 30
+  });
+</script> 
+ </body>
